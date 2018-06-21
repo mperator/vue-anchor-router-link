@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import HelloWorld from '../src/components/HelloWorld'
 
 export default {
   name: 'App',
