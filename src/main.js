@@ -1,2 +1,2 @@
-import HelloWorld from './components/HelloWorld.vue'
-export default HelloWorld
+import VueAnchorRouterLink from './components/VueAnchorRouterLink.vue'
+export default VueAnchorRouterLink

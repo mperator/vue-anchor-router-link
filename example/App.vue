@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <anchor-router-link />
   </div>
 </template>
 
 <script>
-import HelloWorld from '../src/components/HelloWorld'
+import AnchorRouterLink from '../src/components/VueAnchorRouterLink'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AnchorRouterLink
   }
 }
 </script>

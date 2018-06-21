@@ -8,8 +8,8 @@ export default {
     'vue'
   ],
   output: {
-    name: 'HelloWorld',
-    file: 'dist/hello-world.js',
+    name: 'VueAnchorRouterLink',
+    file: 'dist/vue-anchor-router-link.js',
     format: 'umd',
     globals: {
       vue: 'Vue'
