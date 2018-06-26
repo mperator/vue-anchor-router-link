@@ -1,6 +1,8 @@
 build/
+config/
 example/
 node_modules/
 index.html
 .*
 *.config.js
+*.code-workspace
