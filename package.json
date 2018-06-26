@@ -1,14 +1,27 @@
 {
   "name": "vue-anchor-router-link",
-  "version": "1.0.0",
-  "description": "\"Router link that address issue #1668 of https://github.com/vuejs/vue-router/issues/1668.\"",
+  "version": "0.7.0",
+  "license": "MIT",
+  "description": "\"Workaroud for VueRouter issue #1668 of https://github.com/vuejs/vue-router/issues/1668.\"",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "router-link",
+    "anchor",
+    "scroll to"
+  ],
   "author": "develop@mperia.de",
-  "private": true,
+  "main": "src/main.js",
+  "private": false,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build-example": "node build/build.js",
     "build": "cross-env NODE_ENV=production rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mperator"
   },
   "dependencies": {
     "vue": "^2.5.2",
