@@ -1,6 +1,6 @@
 {
   "name": "vue-anchor-router-link",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "license": "MIT",
   "description": "\"Workaroud for VueRouter issue #1668 of https://github.com/vuejs/vue-router/issues/1668.\"",
   "keywords": [
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mperator"
+    "url": "https://github.com/mperator/vue-anchor-router-link"
   },
   "dependencies": {
     "vue": "^2.5.2",
