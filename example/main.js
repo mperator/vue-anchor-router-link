@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App'
 import VueRouter from "vue-router";
 // Use VueScrollTo for animation.
-// import VueScrollTo from "vue-scrollto";
+import VueScrollTo from "vue-scrollto";
 
 Vue.config.productionTip = false
 
@@ -10,7 +10,7 @@ import Page1 from "./components/Page1"
 import Page2 from "./components/Page2"
 
 // Use VueScrollTo for animation.
-// Vue.use(VueScrollTo);
+Vue.use(VueScrollTo);
 Vue.use(VueRouter);
 const router = new VueRouter({
     mode: 'history',
@@ -28,9 +28,10 @@ const router = new VueRouter({
     ],
     scrollBehavior(to, from, savedPosition) {
         if (to.hash) {
-            window.location.href = to.hash;
+            // Use for direct jump.
+            // window.location.href = to.hash;
             // Use VueScrollTo for animation.
-            // VueScrollTo.scrollTo(to.hash, 700);
+            VueScrollTo.scrollTo(to.hash, 700);
             return { selector: to.hash }
         } else if (savedPosition) {
             return savedPosition;

@@ -2,6 +2,7 @@
     <div id="page2">
     <div id="start">Start</div>
     <h2>Page 2</h2>
+    <h3>Animate scrolling. To test scroll down and press link 'To Start' then the scroll down and press again.</h3>
 
     <anchor-router-link :to="{name: 'Page2', hash: '#end'}" :scrollOptions="scrollOptions">To End</anchor-router-link>
 

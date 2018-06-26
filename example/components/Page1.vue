@@ -2,7 +2,8 @@
     <div id="page1">
     <div id="start">Start</div>
     <h2>Page 1</h2>
-
+    <h3>Direct scrolling (jump). To test scroll down and press link 'To Start' then the scroll down and press again.</h3>
+    
     <anchor-router-link :to="{name: 'Page1', hash: '#end'}">To End</anchor-router-link>
 
     <p>1</p>
