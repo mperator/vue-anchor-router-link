@@ -60,11 +60,6 @@ npm run serve-example1
 npm run serve-example1
 ```
 
-### Compiles and minifies for production
-```
-npm run build-lib
-```
-
 ### Lints and fixes files
 ```
 npm run lint

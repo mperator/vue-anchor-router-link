@@ -1,6 +1,6 @@
 {
     "name": "vue-anchor-router-link",
-    "version": "0.8.1",
+    "version": "0.8.4",
     "private": false,
     "license": "MIT",
     "description": "\"Workaroud for VueRouter issue #1668 of https://github.com/vuejs/vue-router/issues/1668.\"",
@@ -12,11 +12,13 @@
         "scroll to"
     ],
     "author": "develop@mperia.de",
-    "main": "dist/VueAnchorRouterLink.common.js",
+    "main": "src/main.js",
+    "files": [
+        "src"
+    ],
     "scripts": {
         "serve-example1": "vue-cli-service serve ./examples/example-jump/main.js",
         "serve-example2": "vue-cli-service serve ./examples/example-scroll/main.js",
-        "build-lib": "vue-cli-service build --target lib --name VueAnchorRouterLink ./src/main.js",
         "lint": "vue-cli-service lint"
     },
     "repository": {
