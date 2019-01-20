@@ -1,6 +1,6 @@
 {
     "name": "vue-anchor-router-link",
-    "version": "0.8.0",
+    "version": "0.8.1",
     "private": false,
     "license": "MIT",
     "description": "\"Workaroud for VueRouter issue #1668 of https://github.com/vuejs/vue-router/issues/1668.\"",
