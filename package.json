@@ -14,8 +14,9 @@
     "author": "develop@mperia.de",
     "main": "dist/VueAnchorRouterLink.common.js",
     "scripts": {
-        "serve": "vue-cli-service serve ./example/main.js",
-        "build": "vue-cli-service build --target lib --name VueAnchorRouterLink ./src/main.js",
+        "serve-example1": "vue-cli-service serve ./examples/example-jump/main.js",
+        "serve-example2": "vue-cli-service serve ./examples/example-scroll/main.js",
+        "build-lib": "vue-cli-service build --target lib --name VueAnchorRouterLink ./src/main.js",
         "lint": "vue-cli-service lint"
     },
     "repository": {
