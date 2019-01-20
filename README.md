@@ -1,59 +1,31 @@
 # vue-anchor-router-link
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-
-# Vue-Anchor-Router-Link
-
 > Workaround for VueRouter issue #1668 of https://github.com/vuejs/vue-router/issues/1668. 
 
-## Installation
-
-### npms
-
-``` bash
-npm install -s vue-anchor-router-link
-```
-
-## Usage
+## Project usage
+Import AnchorRouterLink from packages and add it to components. Check out the project examples.
 
 ``` js
-import VueAnchorRouterLink from 'vue-anchor-router-link'
+import AnchorRouterLink from 'vue-anchor-router-link'
 
 ...
 components: {
-    VueAnchorRouterLink
+    AnchorRouterLink
 }
 ...
 
 ```
 
-Use VueAnchorRouterLink to route to an html anchor tag. Use the additional scrollOptions to create a scroll animation. Make sure you implement the same scroll settings like in the VueRouter scrollBehavior function. Leave empty to use scroll directly to hash.
+Use VueAnchorRouterLink to route to an html anchor tag. Use the additional scrollOptions to create a scroll animation. Make sure you implement the same scroll settings like in the VueRouter scrollBehavior function. Leave empty to jump directly to hash.
 
-### Default
+### Jump animation
+Scrolls to anchor tag with jump animation.
 ``` html
 <anchor-router-link :to="{name: 'Page1', hash: '#start'}">To Start</anchor-router-link>
 ```
 
-### With Animation
+### Scroll Animation
+Scrolls to anchor tag with scroll animation.
 ``` html
 <anchor-router-link 
     :to="{name: 'Page2', hash: '#start'}" 
@@ -73,22 +45,27 @@ Use VueAnchorRouterLink to route to an html anchor tag. Use the additional scrol
 
 For more details on scroll animation see: [https://rigor789.github.io/vue-scrollto/#/docs](https://rigor789.github.io/vue-scrollto/#/docs)
 
+## Project setup
+``` bash
+npm install
+```
 
-## Build Setup
+### Compiles and hot-reloads for exampless
 
 ``` bash
-# install dependencies
-npm install
+# Example 1 (jump animation):
+npm run serve-example1
 
-# serve with hot reload at localhost:8080
-npm run serve
+# Example 2 (scroll animation):
+npm run serve-example1
+```
 
-# build for production with minification
-npm run build
+### Compiles and minifies for production
+```
+npm run build-lib
+```
 
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# build example
-npm run build-example
+### Lints and fixes files
+```
+npm run lint
 ```
