@@ -1,13 +1,14 @@
 <template>
-    <router-link @click.native="routeToAnchor" :to="to">
-        <slot />
-    </router-link>
+  <router-link @click.native="routeToAnchor" :to="to">
+    <slot/>
+  </router-link>
 </template>
 
 <script>
 import Vue from "vue";
 import Router from "vue-router";
 import VueScrollTo from "vue-scrollto";
+
 Vue.use(Router);
 Vue.use(VueScrollTo);
 
@@ -27,8 +28,9 @@ export default {
   },
   methods: {
     routeToAnchor() {
+      // Scrolls manually to anchor if user clicks an routing link but the route has not changed.
       if (this.$route.fullPath === this.previousRoute.fullPath) {
-          this.$scrollTo(this.to.hash, this.scrollOptions);
+        this.$scrollTo(this.to.hash, this.scrollOptions);
       }
     }
   },

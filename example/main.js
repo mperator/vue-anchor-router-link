@@ -42,9 +42,10 @@ const router = new VueRouter({
 })
 
 /* eslint-disable no-new */
+Vue.config.productionTip = false
+
 new Vue({
-    el: '#app',
-    router,
-    components: { App },
-    template: '<App/>'
-})
+  router,
+  render: h => h(App)
+}).$mount('#app')
+

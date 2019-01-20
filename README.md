@@ -1,6 +1,29 @@
+# vue-anchor-router-link
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+
 # Vue-Anchor-Router-Link
 
-> Workaroud for VueRouter issue #1668 of https://github.com/vuejs/vue-router/issues/1668. 
+> Workaround for VueRouter issue #1668 of https://github.com/vuejs/vue-router/issues/1668. 
 
 ## Installation
 
@@ -58,7 +81,7 @@ For more details on scroll animation see: [https://rigor789.github.io/vue-scroll
 npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm run serve
 
 # build for production with minification
 npm run build

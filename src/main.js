@@ -1,2 +1,2 @@
-import VueAnchorRouterLink from './components/VueAnchorRouterLink.vue'
+import VueAnchorRouterLink from './components/VueAnchorRouterLink'
 export default VueAnchorRouterLink
