@@ -38,6 +38,11 @@ export default {
     $route: function(newRoute, oldRoute) {
       this.previousRoute = newRoute;
     }
+  },
+  mounted(){
+    if( this.$route.hash ){
+      this.$scrollTo(this.$route.hash, this.scrollOptions);
+    }
   }
 };
 </script>
